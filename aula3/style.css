@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
+
+:link{
+    text-decoration: none;
+    color: inherit;
+} 
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #2A2F33;
+}
+
+header{
+    background-color: #046DD5;
+    padding: 1em;
+
+    h1{
+        font-family: Poppins;
+        margin : 0%;
+        font-size: 40px;
+        text-align: left;
+        color: white;
+    }
+    h2{
+        font-family: Poppins;
+        font-weight: 400;
+        margin : 0%;
+        font-size: 40px;
+        text-align: left;
+    }
+    .signup{
+        font-family: Lora;
+        padding: 1em;
+    }
+}
+
+nav{
+    text-align: center;
+    a{
+        color: #2A2F33;
+    }
+
+    font-family: Poppins;
+    
+    li{
+        margin: 0;
+        padding: 0.5em;
+        border: transparent ;
+        border-width: 90px;
+        list-style-type: none;
+        color: #2A2F33;
+    }
+    
+    list-style-type: none;
+
+    li:first-child{
+        border-top: solid  #E1493E;
+    }
+    li:nth-child(2){
+        border-top: solid  #8ABA56;
+    }
+    li:nth-child(3){
+        border-top: solid  #5B4282;
+    }
+    li:nth-child(4){
+        border-top: solid  #FF8932;
+    }
+    li:nth-child(5){
+        border-top: solid  #19B6E9;
+    }
+    li:nth-child(6){
+        border-top: solid  #E84C8B;
+    }
+}
+
+#related{
+    padding: 1em;
+    background-color: #2A2F33;
+    color: white;
+
+    h1{
+        font-family: Poppins;
+        
+        a:hover{
+            color: white;
+        }
+    }
+}
+
+article{
+
+    header{
+        padding: 1em;
+        background-color: transparent;
+
+        a{
+            margin: 1em;
+            font-size: 30px;
+
+            width: 9em;
+            position: absolute;
+            text-align: left;
+            color: white;
+
+            filter: blur();
+            filter: drop-shadow(#2A2F33 5px 5px 5px);
+        }
+    }
+    img{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    p:first-of-type:first-letter{
+            font-size: 1.5em;
+    }
+
+    footer{
+        background-color: #E1493E;
+        color: white;
+        padding: 1em;
+
+        .author::before{
+            content: "By ";
+        }
+
+        .tags{
+            text-decoration: underline;
+            &:after{
+                content: ".";
+            }
+        }
+
+        .comments{
+            text-decoration: underline;
+
+            &:after{
+                content: " comments";
+            }
+        }
+        
+    }
+}
+
+footer{
+    margin-top: 1em;
+    padding: 0.3em;
+    padding-left: 1em;
+    background-color: #2A2F33;
+    color: white;
+}
+

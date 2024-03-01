@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="age">Age:</label><br>
+    <input type="radio" id="less18" name="age" value="less18">
+    <label for="less18">&lt;18</label><br>
+    <input type="radio" id="19-35" name="age" value="19-35">
+    <label for="19-35">19-35</label><br>
+    <input type="radio" id="36-48" name="age" value="36-48">
+    <label for="36-48">36-48</label><br>
+    <input type="radio" id="more48" name="age" value="more48">
+    <label for="more48">&gt;48</label><br>
+
+    <label for="profession">Profession:</label><br>
+    <input list="professions" id="profession" name="profession">
+    <datalist id="professions">
+        <option value="Business analyst"></option>
+        <option value="Computer repair technician"></option>
+        <option value="Database administrator"></option>
+        <option value="Data analyst"></option>
+        <option value="Hardware engineer"></option>
+    </datalist>
+
+
+    <label for="interests">Interests:</label><br>
+    <select name="interests" id="interests" multiple>
+        <option value="interest1">interest1</option>
+        <option value="interest2">interest2</option>
+        <option value="interest3">interest3</option>
+        <option value="interest4">interest4</option>
+    </select>
+    
+    //thissssssssssss:
+    <input type="checkbox" name="pets" value="Dog"> Dog<br>
+    
+</form>

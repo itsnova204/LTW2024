@@ -1,0 +1,25 @@
+#signup{
+    text-align: right;
+}
+
+nav{
+    li{
+        display: inline;
+    }
+    input{
+        display: none;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 1rem;
+  }
+
+  aside {
+    min-height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid red;
+  }
