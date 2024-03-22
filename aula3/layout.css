@@ -2,24 +2,44 @@
     text-align: right;
 }
 
-nav{
-    li{
-        display: inline;
-    }
-    input{
-        display: none;
-    }
-}
-
-.container {
+body {
+    background-color: #edeff0;
+  
+    margin: 0 auto;
+    width: 60em;
+  
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 1rem;
+    grid-template-columns: [start] 4fr [middle] 1fr [end];
+    grid-template-rows: [start] auto [nav] auto [news] 1fr [footer] auto [end];
+
+    header {
+        grid-column: start / end;
+    }
+
+    nav {
+        grid-column: start;
+
+        ul{
+            display: flex;
+        }
+
+        li{
+            display: block;
+            flex: auto;
+        }
+    }
+
+    
+    aside {
+        grid-column: middle / end;
+        grid-row: nav / end;
+    }
+
+    footer {
+        align-self: end;
+    }
   }
 
-  aside {
-    min-height: 100vh;
-    justify-content: space-between;
-    flex-direction: column;
-    border-right: 1px solid red;
-  }
+  
+
+  

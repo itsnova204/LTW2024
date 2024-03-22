@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
 
+#hamburger{
+    display: none;
+}
+
 :link{
     text-decoration: none;
     color: inherit;
@@ -16,13 +20,14 @@ a:hover{
 header{
     background-color: #046DD5;
     padding: 1em;
+    color: white;
+
 
     h1{
         font-family: Poppins;
         margin : 0%;
         font-size: 40px;
         text-align: left;
-        color: white;
     }
     h2{
         font-family: Poppins;
@@ -31,31 +36,50 @@ header{
         font-size: 40px;
         text-align: left;
     }
-    .signup{
+    #signup{
         font-family: Lora;
-        padding: 1em;
+        padding: 0 1em;
+
+        a{
+            padding: 0 1em;
+        }
     }
 }
 
+
 nav{
-    text-align: center;
+    background-color: white;
+    
     a{
         color: #2A2F33;
     }
-
+    
+    
     font-family: Poppins;
     
-    li{
+    ul{
         margin: 0;
-        padding: 0.5em;
-        border: transparent ;
-        border-width: 90px;
-        list-style-type: none;
-        color: #2A2F33;
+        padding: 0;
     }
     
-    list-style-type: none;
+    li{
+        text-align: center;
+        margin: 0;
+        padding:0 1em;
 
+        list-style-type: none;
+        color: #2A2F33;
+
+
+        &:hover{
+            background-color: #2a2f33;
+            a {
+                color: white;
+            }
+        }
+
+    }
+   
     li:first-child{
         border-top: solid  #E1493E;
     }
@@ -93,6 +117,7 @@ nav{
 article{
 
     header{
+        position: absolute;
         padding: 1em;
         background-color: transparent;
 
@@ -101,7 +126,6 @@ article{
             font-size: 30px;
 
             width: 9em;
-            position: absolute;
             text-align: left;
             color: white;
 

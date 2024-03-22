@@ -2,6 +2,7 @@
     body {
         width: 100%;
         grid-template-columns: [start] 4fr [end];
+        display: block;
     }
 
     #related{
@@ -27,7 +28,6 @@
         } 
 
         #news header {
-            background-color: white;
             position: relative;
             a{
                 color: black;
@@ -40,34 +40,7 @@
           #news header h1 {
             text-shadow: none;
           }
-
-
-
-          nav{
-            .hamburger::before{
-                display: block;
-                background-color: #2a2f33;
-                color: white;
-                padding: 1em;
-    
-            }
-
-            input:not(checked) + .hamburger::before{
-                content: '\2630';
-                li{
-                    display: none;
-                }
-            }
-
-            input:checked + .hamburger::before{
-                content:'\2715';
-
-                li{
-                    opacity: 1;
-                }
-            }
-        }
-            
-            
+        
     }
 }
+
